@@ -3,6 +3,7 @@ from dash import Dash, Output, Input, State
 from models import model, tfidf
 
 app = Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP])
+server = app.server
 
 @app.callback(
     Output("output-range", "value"),
